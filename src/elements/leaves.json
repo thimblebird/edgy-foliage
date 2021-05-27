@@ -1,119 +1,505 @@
 {
   "parents": [{ "block": "minecraft/leaves" }],
+  "blockstates": [
+    {
+      "name": "acacia_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/acacia_leaves" }
+        }
+      }
+    },
+    {
+      "name": "birch_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/birch_leaves" }
+        }
+      }
+    },
+    {
+      "name": "dark_oak_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/dark_oak_leaves" }
+        }
+      }
+    },
+    {
+      "name": "jungle_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/jungle_leaves" }
+        }
+      }
+    },
+    {
+      "name": "oak_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/oak_leaves" }
+        }
+      }
+    },
+    {
+      "name": "spruce_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/spruce_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "quark",
+      "name": "blue_blossom_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "quark:block/blue_blossom_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "quark",
+      "name": "lavender_blossom_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "quark:block/lavender_blossom_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "quark",
+      "name": "orange_blossom_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "quark:block/orange_blossom_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "quark",
+      "name": "pink_blossom_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "quark:block/pink_blossom_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "quark",
+      "name": "yellow_blossom_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "quark:block/yellow_blossom_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "quark",
+      "name": "red_blossom_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "quark:block/red_blossom_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "environmental",
+      "name": "willow_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "environmental:block/willow_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "environmental",
+      "name": "cherry_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "environmental:block/cherry_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "environmental",
+      "name": "pink_wisteria_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "environmental:block/pink_wisteria_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "environmental",
+      "name": "blue_wisteria_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "environmental:block/blue_wisteria_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "environmental",
+      "name": "purple_wisteria_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "environmental:block/purple_wisteria_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "environmental",
+      "name": "white_wisteria_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "environmental:block/white_wisteria_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "autumnity",
+      "name": "maple_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "autumnity:block/maple_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "autumnity",
+      "name": "red_maple_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "autumnity:block/maple_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "autumnity",
+      "name": "orange_maple_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "autumnity:block/maple_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "autumnity",
+      "name": "yellow_maple_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "autumnity:block/maple_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "bayou_blues",
+      "name": "cypress_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "bayou_blues:block/cypress_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "upgrade_aquatic",
+      "name": "river_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "upgrade_aquatic:block/river_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "abundance",
+      "name": "jacaranda_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "abundance:block/jacaranda_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "abundance",
+      "name": "budding_jacaranda_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "abundance:block/budding_jacaranda_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "abundance",
+      "name": "flowering_jacaranda_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "abundance:block/flowering_jacaranda_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "abundance",
+      "name": "redbud_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "abundance:block/redbud_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "atmospheric",
+      "name": "rosewood_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "atmospheric:block/rosewood_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "atmospheric",
+      "name": "morado_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "atmospheric:block/morado_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "atmospheric",
+      "name": "yucca_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "atmospheric:block/yucca_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "atmospheric",
+      "name": "kousa_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "atmospheric:block/kousa_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "atmospheric",
+      "name": "aspen_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "atmospheric:block/aspen_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "atmospheric",
+      "name": "grimwood_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "atmospheric:block/grimwood_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "atum",
+      "name": "palm_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "atum:block/palm_leaves" }
+        }
+      }
+    }
+  ],
   "elements": [
     {
-      "from": [0, 16, 4],
-      "to": [4, 16, 12],
-      "rotation": { "angle": 22.5, "axis": "z", "origin": [0, 16, 8] },
-      "faces": {
-        "up": {
-          "uv": [4, 12, 12, 16],
-          "rotation": 270,
-          "texture": "#all",
-          "cullface": "up",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [0, 0, 4],
-      "to": [4, 0, 12],
-      "rotation": { "angle": -22.5, "axis": "z", "origin": [0, 0, 8] },
-      "faces": {
-        "down": {
-          "uv": [12, 12, 4, 16],
-          "rotation": 270,
-          "texture": "#all",
-          "cullface": "down",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [0, 12, 4],
-      "to": [0, 16, 12],
-      "rotation": { "angle": -22.5, "axis": "z", "origin": [0, 16, 8] },
-      "faces": {
-        "west": {
-          "uv": [4, 0, 12, 4],
-          "texture": "#all",
-          "cullface": "west",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [0, 0, 4],
-      "to": [0, 4, 12],
-      "rotation": { "angle": 22.5, "axis": "z", "origin": [0, 0, 8] },
-      "faces": {
-        "west": {
-          "uv": [4, 4, 12, 0],
-          "texture": "#all",
-          "cullface": "west",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [4, 12, 16],
-      "to": [12, 16, 16],
-      "rotation": { "angle": -22.5, "axis": "x", "origin": [8, 16, 16] },
-      "faces": {
-        "south": {
-          "uv": [4, 0, 12, 4],
-          "texture": "#all",
-          "cullface": "south",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [4, 0, 16],
-      "to": [12, 4, 16],
-      "rotation": { "angle": 22.5, "axis": "x", "origin": [8, 0, 16] },
-      "faces": {
-        "south": {
-          "uv": [4, 4, 12, 0],
-          "texture": "#all",
-          "cullface": "south",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [4, 12, 0],
-      "to": [12, 16, 0],
-      "rotation": { "angle": 22.5, "axis": "x", "origin": [8, 16, 0] },
+      "from": [0, -4, 8],
+      "to": [16, 0, 8],
+      "rotation": { "angle": -45, "axis": "y", "origin": [8, 24, 8] },
       "faces": {
         "north": {
-          "uv": [12, 0, 4, 4],
+          "uv": [0, 12, 16, 16],
           "texture": "#all",
-          "cullface": "north",
+          "cullface": "up",
           "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [4, 0, 0],
-      "to": [12, 4, 0],
-      "rotation": { "angle": -22.5, "axis": "x", "origin": [8, 0, 0] },
-      "faces": {
-        "north": {
-          "uv": [12, 4, 4, 0],
-          "texture": "#all",
-          "cullface": "north",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [4, 16, 12],
-      "to": [12, 16, 16],
-      "rotation": { "angle": 22.5, "axis": "x", "origin": [8, 16, 16] },
-      "faces": {
-        "up": {
-          "uv": [4, 12, 12, 16],
+        },
+        "south": {
+          "uv": [0, 12, 16, 16],
           "texture": "#all",
           "cullface": "up",
           "tintindex": 0
@@ -121,94 +507,20 @@
       }
     },
     {
-      "from": [4, 0, 12],
-      "to": [12, 0, 16],
-      "rotation": { "angle": -22.5, "axis": "x", "origin": [8, 0, 16] },
-      "faces": {
-        "down": {
-          "uv": [4, 16, 12, 12],
-          "texture": "#all",
-          "cullface": "down",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [4, 16, 0],
-      "to": [12, 16, 4],
-      "rotation": { "angle": -22.5, "axis": "x", "origin": [8, 16, 0] },
-      "faces": {
-        "up": {
-          "uv": [4, 16, 12, 12],
-          "texture": "#all",
-          "cullface": "up",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [4, 0, 0],
-      "to": [12, 0, 4],
-      "rotation": { "angle": 22.5, "axis": "x", "origin": [8, 0, 0] },
-      "faces": {
-        "down": {
-          "uv": [4, 12, 12, 16],
-          "texture": "#all",
-          "cullface": "down",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [12, 16, 4],
-      "to": [16, 16, 12],
-      "rotation": { "angle": -22.5, "axis": "z", "origin": [16, 16, 8] },
-      "faces": {
-        "up": {
-          "uv": [4, 12, 12, 16],
-          "rotation": 270,
-          "texture": "#all",
-          "cullface": "up",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [12, 0, 4],
-      "to": [16, 0, 12],
-      "rotation": { "angle": 22.5, "axis": "z", "origin": [16, 0, 8] },
-      "faces": {
-        "down": {
-          "uv": [12, 12, 4, 16],
-          "rotation": 270,
-          "texture": "#all",
-          "cullface": "down",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [16, 12, 4],
-      "to": [16, 16, 12],
-      "rotation": { "angle": 22.5, "axis": "z", "origin": [16, 16, 8] },
+      "from": [8, -4, 0],
+      "to": [8, 0, 16],
+      "rotation": { "angle": -45, "axis": "y", "origin": [8, 24, 8] },
       "faces": {
         "east": {
-          "uv": [4, 0, 12, 4],
+          "uv": [0, 0, 16, 4],
           "texture": "#all",
-          "cullface": "east",
+          "cullface": "up",
           "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [16, 0, 4],
-      "to": [16, 4, 12],
-      "rotation": { "angle": -22.5, "axis": "z", "origin": [16, 0, 8] },
-      "faces": {
-        "east": {
-          "uv": [4, 4, 12, 0],
+        },
+        "west": {
+          "uv": [0, 0, 16, 4],
           "texture": "#all",
-          "cullface": "east",
+          "cullface": "up",
           "tintindex": 0
         }
       }
