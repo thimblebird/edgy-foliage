@@ -79,12 +79,21 @@ export default class Edgy {
   }
 
   buildElement = (element = {}) => {
+    const json_options = {
+      encoding: 'utf8',
+      spaces: 2,
+    }
+
     this.getParents(element).forEach((parent) => {
       try {
-        const outputFilePath = path.join(
+        const output_rootpath = path.join(
           this.build_directory,
           'assets',
-          parent.mod_id,
+          parent.mod_id
+        )
+
+        const output_filepath = path.join(
+          output_rootpath,
           'models',
           'block',
           parent.file_name
@@ -108,16 +117,111 @@ export default class Edgy {
             })
           }
         }
-        fs.outputJsonSync(
-          outputFilePath,
-          {
-            ...parent.json,
-            elements: [...parent.json.elements, ...element.json.elements],
-          },
-          { encoding: 'utf8' }
-        )
 
-        LOG.elementBuilt(element, parent, outputFilePath)
+        const output_json = {
+          parent: element.json.parent || parent.json.parent,
+          ambientocclusion:
+            element.json.ambientocclusion !== parent.json.ambientocclusion
+              ? element.json.ambientocclusion
+              : parent.json.ambientocclusion,
+          display:
+            element.json.display || element.json.display
+              ? { ...parent.json.display, ...element.json.display }
+              : undefined,
+          textures: { ...parent.json.textures, ...element.json.textures },
+          elements: [...parent.json.elements, ...element.json.elements],
+        }
+
+        // compile model file
+        fs.outputJsonSync(output_filepath, output_json, json_options)
+
+        // block states
+        if (element.json.blockstates) {
+          let blockstates_directory = path.join(output_rootpath, 'blockstates')
+
+          const blockstates = element.json.blockstates
+
+          if (!Array.isArray(blockstates)) {
+            // single file block states
+            fs.outputJsonSync(
+              path.join(blockstates_directory, parent.file_name),
+              { ...blockstates },
+              json_options
+            )
+          } else {
+            blockstates.forEach((blockstate) => {
+              if (blockstate.options) {
+                if (blockstate.options.variants) {
+                  if (blockstate.options.variants.rotate === true) {
+                    for (const variant_key in blockstate.json.variants) {
+                      if (
+                        Object.hasOwnProperty.call(
+                          blockstate.json.variants,
+                          variant_key
+                        )
+                      ) {
+                        const variant = blockstate.json.variants[variant_key]
+
+                        if (!Array.isArray(variant)) {
+                          blockstate.json.variants[variant_key] = [variant]
+                        }
+
+                        if (blockstate.json.variants[variant_key].length > 1) {
+                          LOG.console('ERROR! rotation allows only one variant')
+                          break
+                        }
+
+                        const allowed_degrees = [0, 90, 180, 270]
+
+                        // remove template variant
+                        blockstate.json.variants[variant_key].shift()
+
+                        for (let degrees_x = 0; degrees_x <= 270; degrees_x++) {
+                          for (
+                            let degrees_y = 0;
+                            degrees_y <= 270;
+                            degrees_y++
+                          ) {
+                            if (
+                              allowed_degrees.includes(degrees_x) &&
+                              allowed_degrees.includes(degrees_y)
+                            ) {
+                              blockstate.json.variants[variant_key].push({
+                                model: variant.model,
+                                x: degrees_x,
+                                y: degrees_y,
+                              })
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              blockstates_directory = path.join(
+                path.join(
+                  this.build_directory,
+                  'assets',
+                  blockstate.mod_id || parent.mod_id
+                ),
+                'blockstates'
+              )
+
+              fs.outputJsonSync(
+                path.join(
+                  blockstates_directory,
+                  path.format({ name: blockstate.name, ext: '.json' })
+                ),
+                blockstate.json,
+                json_options
+              )
+            })
+          }
+        }
+
+        LOG.elementBuilt(element, parent, output_filepath)
       } catch (error) {
         return LOG.modelForElementNotFound({
           mod_id: parent.mod_id,
@@ -139,7 +243,7 @@ export default class Edgy {
       LOG.buildCleaned(clean_directory)
 
       // build
-    this.elements.forEach((element) => this.buildElement(element))
+      this.elements.forEach((element) => this.buildElement(element))
 
       // callback
       if (typeof callback === 'function') {
@@ -159,13 +263,14 @@ const LOG = {
       `Build Directory ${chalk.green(`"${build_directory}"`)} all cleaned up`
     )
   },
+  elementBuilt: (element, parent, output_filepath) => {
     try {
       console.log(
         title,
         `Built Element ${chalk.yellow(
           `"${element.name}"`
         )} using Mod ${chalk.magenta(`"${parent.mod_id}"`)} into ${chalk.green(
-          `"${outputFilePath}"`
+          `"${output_filepath}"`
         )}`
       )
     } catch (error) {
