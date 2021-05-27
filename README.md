@@ -9,6 +9,7 @@ Makes foliage in Minecraft all hip and fancy.
 ## How it works
 
 This resource pack will only ever add custom **models** and **block states**, _no textures_.
+
 It uses existing textures to enhance foliage where appropriate.
 
 <!-- ## Compatibility
