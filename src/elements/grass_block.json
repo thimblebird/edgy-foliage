@@ -1,0 +1,39 @@
+{
+  "parents": [
+    { "block": "minecraft/grass_block" },
+    { "block": "byg/meadow_grass_block", "tintindex": 1 }
+  ],
+  "elements": [
+    {
+      "_comment": "Edgy: Upper Edges Grass Overlay",
+      "from": [-0.01, 16, -0.01],
+      "to": [16.01, 32, 16.01],
+      "faces": {
+        "north": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#overlay",
+          "tintindex": 0,
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#overlay",
+          "tintindex": 0,
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#overlay",
+          "tintindex": 0,
+          "cullface": "west"
+        },
+        "east": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#overlay",
+          "tintindex": 0,
+          "cullface": "east"
+        }
+      }
+    }
+  ]
+}
