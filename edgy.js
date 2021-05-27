@@ -31,7 +31,14 @@ export default class Edgy {
           const parents = file_json.parents
           delete file_json.parents
 
-          return { name, file_name, file_path, parents, json: file_json }
+          return {
+            name,
+            file_name,
+            file_path,
+            parents,
+            options: file_json.options,
+            json: file_json,
+          }
         }
       })
   }
@@ -83,6 +90,24 @@ export default class Edgy {
           parent.file_name
         )
 
+        // apply options
+        if (element.options) {
+          if (element.options.zFighting) {
+            const size_modifier = 0.01 * Math.sign(element.options.zFighting)
+
+            element.json.elements.forEach((element_part, part_i) => {
+              // fix "from" coordinates
+              element_part.from.forEach((_, coord_i) => {
+                element.json.elements[part_i].from[coord_i] -= size_modifier
+              })
+
+              // fix "to" coordinates
+              element_part.to.forEach((_, coord_i) => {
+                element.json.elements[part_i].to[coord_i] += size_modifier
+              })
+            })
+          }
+        }
         fs.outputJsonSync(
           outputFilePath,
           {
