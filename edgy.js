@@ -129,8 +129,23 @@ export default class Edgy {
     })
   }
 
-  buildElements = () => {
+  buildElements = (callback) => {
+    // clean build folder
+    const clean_directory = path.join(this.build_directory, 'assets')
+
+    fs.remove(clean_directory, (err) => {
+      if (err) throw err
+
+      LOG.buildCleaned(clean_directory)
+
+      // build
     this.elements.forEach((element) => this.buildElement(element))
+
+      // callback
+      if (typeof callback === 'function') {
+        callback(this.elements)
+      }
+    })
   }
 }
 
@@ -138,7 +153,12 @@ export default class Edgy {
 const title = chalk.bgGreen(chalk.black(' Edgy Foliage '))
 const LOG = {
   console: console.log,
-  elementBuilt: (element, parent, outputFilePath) => {
+  buildCleaned: (build_directory) => {
+    console.log(
+      title,
+      `Build Directory ${chalk.green(`"${build_directory}"`)} all cleaned up`
+    )
+  },
     try {
       console.log(
         title,
