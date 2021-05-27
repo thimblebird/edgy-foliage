@@ -2,16 +2,16 @@
 
 Makes foliage in Minecraft all hip and fancy.
 
-## Features
+<!-- ## Features
 
-- Grass Block
+- Grass Block -->
 
 ## How it works
 
-This resource pack will only ever add **custom models**, _no textures_.
-It uses existing overlay textures to enhance foliage where appropriate.
+This resource pack will only ever add custom **models** and **block states**, _no textures_.
+It uses existing textures to enhance foliage where appropriate.
 
-## Compatibility
+<!-- ## Compatibility
 
 Format:
 
@@ -27,7 +27,7 @@ Format:
 
 - **`grass_block`**
   overlays:
-  - _`block/grass_block_side_overlay`_
+  - _`block/grass_block_side_overlay`_ -->
 
 <!--
 ### Mods
@@ -45,7 +45,7 @@ Initially inspired by [u/alkalinechaos](https://www.reddit.com/user/alkalinechao
 ## Authors
 
 - Thomas "**CREE7EN.**" Creeten
-  _[Website](https://creeation.de) | [GitHub](https://github.com/creeation) | [Twitter](https://twitter.com/fingerhutvogel) | [CurseForge](https://www.curseforge.com/members/cree7en)_
+  _( [Website](https://creeation.de) | [GitHub](https://github.com/creeation) | [Twitter](https://twitter.com/fingerhutvogel) | [CurseForge](https://www.curseforge.com/members/cree7en) )_
 
 ## License
 
