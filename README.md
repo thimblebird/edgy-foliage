@@ -1,6 +1,6 @@
 # Edgy Foliage
 
-Makes foliage in Minecraft all hip and fancy.
+Makes Grass and Stuff in Minecraft all hip and fancy.
 
 <!-- ## Features
 
