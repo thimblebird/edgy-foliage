@@ -3,11 +3,13 @@
     { "block": "minecraft/grass_block" },
     { "block": "byg/meadow_grass_block", "tintindex": 1 }
   ],
+  "options": {
+    "zFighting": 1
+  },
   "elements": [
     {
-      "_comment": "Edgy: Upper Edges Grass Overlay",
-      "from": [-0.01, 16, -0.01],
-      "to": [16.01, 32, 16.01],
+      "from": [0, 16, 0],
+      "to": [16, 32, 16],
       "faces": {
         "north": {
           "uv": [16, 16, 0, 0],
