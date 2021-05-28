@@ -8,11 +8,11 @@ const processor = new Edgy({
 
 processor.buildElements((_elements) => {
   // todo: overwrite block models support
-  fs.copyFileSync(
+  fs.copySync(
     './src/blocks/cactus.json',
     './build/assets/minecraft/models/block/cactus.json'
   )
 })
 
-fs.copyFileSync('./src/pack.mcmeta', './build/pack.mcmeta')
-fs.copyFileSync('./src/pack.png', './build/pack.png')
+fs.copySync('./src/pack.mcmeta', './build/pack.mcmeta')
+fs.copySync('./src/pack.png', './build/pack.png')
