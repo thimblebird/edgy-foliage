@@ -84,7 +84,9 @@ export default class Edgy {
       spaces: 2,
     }
 
-    this.getParents(element).forEach((parent) => {
+    let options_applied = false
+
+    this.getParents(element).forEach((parent, _parent_i) => {
       try {
         const output_rootpath = path.join(
           this.build_directory,
@@ -100,22 +102,26 @@ export default class Edgy {
         )
 
         // apply options
-        if (element.options) {
+        if (element.options && !options_applied) {
           if (element.options.zFighting) {
             const size_modifier = 0.01 * Math.sign(element.options.zFighting)
 
             element.json.elements.forEach((element_part, part_i) => {
-              // fix "from" coordinates
-              element_part.from.forEach((_, coord_i) => {
-                element.json.elements[part_i].from[coord_i] -= size_modifier
+              element.json.elements[part_i].from.forEach((coord, coord_i) => {
+                let from_size = coord - size_modifier
+                if (from_size < -32) return
+                element.json.elements[part_i].from[coord_i] = from_size
               })
 
-              // fix "to" coordinates
-              element_part.to.forEach((_, coord_i) => {
-                element.json.elements[part_i].to[coord_i] += size_modifier
+              element.json.elements[part_i].to.forEach((coord, coord_i) => {
+                let to_size = coord + size_modifier
+                if (to_size > 32) return
+                element.json.elements[part_i].to[coord_i] = to_size
               })
             })
           }
+
+          options_applied = true
         }
 
         const output_json = {
