@@ -45,8 +45,8 @@ Initially inspired by [u/alkalinechaos](https://www.reddit.com/user/alkalinechao
 
 ## Authors
 
-- Thomas "**CREE7EN.**" Creeten
-  _( [Website](https://creeation.de) | [GitHub](https://github.com/creeation) | [Twitter](https://twitter.com/fingerhutvogel) | [CurseForge](https://www.curseforge.com/members/cree7en) )_
+- thimblebird
+  _( [Website](https://thimblebird.github.io) | [GitHub](https://github.com/thimblebird) | [CurseForge](https://www.curseforge.com/members/thimblebird) )_
 
 ## License
 
