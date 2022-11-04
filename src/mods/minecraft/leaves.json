@@ -14,12 +14,6 @@
           "tintindex": 0,
           "cullface": "down"
         },
-        "up": {
-          "uv": [0, 0, 16, 16],
-          "texture": "#all",
-          "tintindex": 0,
-          "cullface": "up"
-        },
         "north": {
           "uv": [0, 0, 16, 16],
           "texture": "#all",

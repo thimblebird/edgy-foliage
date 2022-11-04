@@ -486,82 +486,42 @@
       }
     }
   ],
+  "options": {
+    "zFighting": 0.9
+  },
   "elements": [
     {
-      "from": [0, -4, 8],
-      "to": [16, 0, 8],
-      "rotation": { "angle": -45, "axis": "y", "origin": [8, -2.5, 8] },
+      "from": [0, 16, 0],
+      "to": [16, 21, 16],
       "faces": {
         "north": {
-          "uv": [0, 4, 16, 0],
+          "uv": [0, 11, 16, 16],
           "texture": "#all",
-          "cullface": "down",
+          "cullface": "up",
+          "tintindex": 0
+        },
+        "east": {
+          "uv": [0, 11, 16, 16],
+          "texture": "#all",
+          "cullface": "up",
           "tintindex": 0
         },
         "south": {
-          "uv": [0, 4, 16, 0],
+          "uv": [0, 11, 16, 16],
           "texture": "#all",
-          "cullface": "down",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [8, -5, 0],
-      "to": [8, 0, 16],
-      "rotation": { "angle": -45, "axis": "y", "origin": [8, -2.5, 8] },
-      "faces": {
-        "east": {
-          "uv": [0, 16, 16, 11],
-          "texture": "#all",
-          "cullface": "down",
+          "cullface": "up",
           "tintindex": 0
         },
         "west": {
-          "uv": [0, 16, 16, 11],
+          "uv": [0, 11, 16, 16],
           "texture": "#all",
-          "cullface": "down",
+          "cullface": "up",
           "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [0, 8, 16],
-      "to": [16, 8, 18],
-      "rotation": { "angle": -45, "axis": "z", "origin": [8, 8, 17.5] },
-      "faces": {
+        },
         "up": {
-          "uv": [0, 0, 16, 2],
-          "rotation": 180,
+          "uv": [0, 0, 16, 16],
           "texture": "#all",
-          "cullface": "south",
-          "tintindex": 0
-        },
-        "down": {
-          "uv": [0, 0, 16, 2],
-          "texture": "#all",
-          "cullface": "south",
-          "tintindex": 0
-        }
-      }
-    },
-    {
-      "from": [8, 0, 16],
-      "to": [8, 16, 19],
-      "rotation": { "angle": -45, "axis": "z", "origin": [8, 8, 17.5] },
-      "faces": {
-        "east": {
-          "uv": [0, 13, 16, 16],
-          "rotation": 270,
-          "texture": "#all",
-          "cullface": "south",
-          "tintindex": 0
-        },
-        "west": {
-          "uv": [0, 13, 16, 16],
-          "rotation": 90,
-          "texture": "#all",
-          "cullface": "south",
+          "cullface": "up",
           "tintindex": 0
         }
       }

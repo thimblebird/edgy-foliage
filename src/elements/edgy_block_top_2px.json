@@ -1,0 +1,38 @@
+{
+  "parents": [{ "block": "farmersdelight/rice_bale" }],
+  "options": {
+    "zFighting": 1
+  },
+  "elements": [
+    {
+      "from": [0, 16, 0],
+      "to": [16, 18, 16],
+      "faces": {
+        "north": {
+          "uv": [0, 0, 16, 2],
+          "texture": "#side",
+          "tintindex": 0,
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [0, 0, 16, 2],
+          "texture": "#side",
+          "tintindex": 0,
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [0, 0, 16, 2],
+          "texture": "#side",
+          "tintindex": 0,
+          "cullface": "west"
+        },
+        "east": {
+          "uv": [0, 0, 16, 2],
+          "texture": "#side",
+          "tintindex": 0,
+          "cullface": "east"
+        }
+      }
+    }
+  ]
+}

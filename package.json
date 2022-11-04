@@ -1,7 +1,10 @@
 {
   "private": true,
   "name": "edgy-foliage",
-  "version": "0.2.1",
+  "version": "0.3.0",
+  "config": {
+    "minecraft_version": "1.19.2"
+  },
   "type": "module",
   "scripts": {
     "build": "node ./index.js",
@@ -10,6 +13,7 @@
   "devDependencies": {
     "chalk": "^4.1.1",
     "fs-extra": "^10.0.0",
-    "jest": "^27.0.1"
+    "jest": "^27.0.1",
+    "zip-local": "^0.3.5"
   }
 }

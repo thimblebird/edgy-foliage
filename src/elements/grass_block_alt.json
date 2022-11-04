@@ -1,0 +1,40 @@
+{
+  "parents": [
+    { "block": "immersive_weathering/rooted_grass_block", "tintindex": 0 }
+  ],
+  "options": {
+    "zFighting": 1
+  },
+  "elements": [
+    {
+      "from": [0, 16, 0],
+      "to": [16, 32, 16],
+      "faces": {
+        "north": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#side_overlay",
+          "tintindex": 0,
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#side_overlay",
+          "tintindex": 0,
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#side_overlay",
+          "tintindex": 0,
+          "cullface": "west"
+        },
+        "east": {
+          "uv": [16, 16, 0, 0],
+          "texture": "#side_overlay",
+          "tintindex": 0,
+          "cullface": "east"
+        }
+      }
+    }
+  ]
+}
