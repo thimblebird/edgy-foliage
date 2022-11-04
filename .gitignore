@@ -1,6 +1,5 @@
 /node_modules
 /.minecraft
 /build
-/package-lock.json
 /**/*_test.json
 /.idea
