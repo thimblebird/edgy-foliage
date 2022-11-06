@@ -9,28 +9,28 @@
   "elements": [
     {
       "from": [0, 16, 0],
-      "to": [16, 32, 16],
+      "to": [16, 20, 16],
       "faces": {
         "north": {
-          "uv": [16, 16, 0, 0],
+          "uv": [16, 4, 0, 0],
           "texture": "#overlay",
           "tintindex": 0,
           "cullface": "north"
         },
         "south": {
-          "uv": [16, 16, 0, 0],
+          "uv": [16, 4, 0, 0],
           "texture": "#overlay",
           "tintindex": 0,
           "cullface": "south"
         },
         "west": {
-          "uv": [16, 16, 0, 0],
+          "uv": [16, 4, 0, 0],
           "texture": "#overlay",
           "tintindex": 0,
           "cullface": "west"
         },
         "east": {
-          "uv": [16, 16, 0, 0],
+          "uv": [16, 4, 0, 0],
           "texture": "#overlay",
           "tintindex": 0,
           "cullface": "east"
