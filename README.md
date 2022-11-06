@@ -1,6 +1,8 @@
 # Edgy Foliage
 
-Makes Grass and Stuff in Minecraft all hip and fancy.
+Makes grass and stuff in Minecraft all hip and fancy.
+
+![2022-11-04_22 22 31](https://user-images.githubusercontent.com/93487547/200077036-4251df03-6cad-4382-95c2-6c83c597fea8.png)
 
 <!-- ## Features
 
@@ -10,7 +12,9 @@ Makes Grass and Stuff in Minecraft all hip and fancy.
 
 This resource pack will only ever add custom **models** and **block states**, _no textures_.
 
-It uses existing textures to enhance foliage where appropriate.
+It uses existing textures to enhance foliage where appropriate (opinionated).
+
+cmd: `npm run build`
 
 <!-- ## Compatibility
 
