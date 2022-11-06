@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "edgy-foliage",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "config": {
     "minecraft_version": "1.19.2"
   },
