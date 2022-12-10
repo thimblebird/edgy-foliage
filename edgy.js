@@ -142,6 +142,10 @@ export default class Edgy {
           elements: [...parent.json.elements, ...element.json.elements],
         };
 
+        if (parent.json.render_type) {
+          output_json.render_type = parent.json.render_type;
+        }
+
         // compile model file
         fs.outputJsonSync(output_filepath, output_json, json_options);
 

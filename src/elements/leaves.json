@@ -484,6 +484,216 @@
           "": { "model": "atum:block/palm_leaves" }
         }
       }
+    },
+    {
+      "mod_id": "phantasm",
+      "name": "pream_leaves",
+      "options": {
+        "variants": {
+          "rotate": false
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "phantasm:block/pream_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "deeperdarker",
+      "name": "echo_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "deeperdarker:block/echo_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "rainbow_oak_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/rainbow_oak_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "sorting_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/sorting_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "mining_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/mining_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "transformation_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/transformation_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "time_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/time_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "dark_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/dark_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "mangrove_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/mangrove_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "canopy_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/canopy_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "twilight_oak_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/twilight_oak_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "hexerei",
+      "name": "willow_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "hexerei:block/willow_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "hexerei",
+      "name": "mahogany_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "hexerei:block/mahogany_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "beanstalk_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/beanstalk_leaves" }
+        }
+      }
+    },
+    {
+      "mod_id": "twilightforest",
+      "name": "thorn_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "twilightforest:block/thorn_leaves" }
+        }
+      }
     }
   ],
   "options": {
