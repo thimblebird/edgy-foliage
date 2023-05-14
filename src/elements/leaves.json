@@ -80,6 +80,19 @@
       }
     },
     {
+      "name": "cherry_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/cherry_leaves" }
+        }
+      }
+    },
+    {
       "mod_id": "quark",
       "name": "blue_blossom_leaves",
       "options": {
