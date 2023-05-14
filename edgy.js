@@ -314,6 +314,11 @@ export const LOG = {
       console.log(`${title}${chalk.bgGray(chalk.black(" INFO "))}`, str);
     }
   },
+  error: (str) => {
+    if (str.length) {
+      console.error(`${title}${chalk.bgRed(chalk.black(" ERR# "))}`, str);
+    }
+  },
   buildCleaned: (clean_path) => {
     try {
       let stats = fs.statSync(clean_path);
