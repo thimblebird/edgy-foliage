@@ -20,6 +20,8 @@ cmd: `node index` or `npm run build`
 
 Reverting, in the following example, to the vanilla cactus model, is as easy as extracting the archive, going into the extracted folder and removing the file `assets\minecraft\models\block\cactus.json` from the resource pack. Same for all other models.
 
+It's planned to add build parameters for easier customization in the future.
+
 <!-- ## Compatibility
 
 Format:
