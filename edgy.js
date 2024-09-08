@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs-extra";
 import chalk from "chalk";
-import zipLocal from "zip-local";
+import ziplib from "zip-lib";
 
 export default class Edgy {
   constructor(
@@ -271,15 +271,13 @@ export default class Edgy {
 
       LOG.buildCleaned(output_filepath);
 
-      // build
-      zipLocal.zip(this.build_pack_directory, (err, archive) => {
-        if (!err) {
-          archive.save(output_filepath, (err) => {
-            if (!err && typeof callback === "function") {
-              callback(output_filepath);
-            }
-          });
+      // build archive
+      ziplib.archiveFolder(this.build_pack_directory, output_filepath).then(function () {
+        if (typeof callback === "function") {
+          callback(output_filepath);
         }
+      }, function (err) {
+        console.error(err);
       });
     });
   };
