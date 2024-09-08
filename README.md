@@ -14,7 +14,7 @@ This resource pack will only ever add custom **models** and **block states**, _n
 
 It uses existing textures to enhance foliage where appropriate (opinionated).
 
-cmd: `npm run build`
+cmd: `node index` or `npm run build`
 
 ## Customization
 
