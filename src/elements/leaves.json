@@ -28,6 +28,19 @@
       }
     },
     {
+      "name": "cherry_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/cherry_leaves" }
+        }
+      }
+    },
+    {
       "name": "dark_oak_leaves",
       "options": {
         "variants": {
