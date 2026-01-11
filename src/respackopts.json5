@@ -1,0 +1,13 @@
+{
+  id: "edgyFoliage",
+  version: 13,
+  capabilities: ["FileFilter", "DirFilter"],
+  conf: {
+    minecraft: {
+      grassierGrassBlocks: true,
+      leafierLeaves: true,
+      plusShapedCactus: true,
+      cheapFake3DSugarCanes: true
+    }
+  }
+}
