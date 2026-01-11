@@ -93,6 +93,19 @@
       }
     },
     {
+      "name": "pale_oak_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/pale_oak_leaves" }
+        }
+      }
+    },
+    {
       "name": "spruce_leaves",
       "options": {
         "variants": {
