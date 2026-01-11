@@ -7,7 +7,7 @@ export default class Edgy {
   constructor(
     options = {
       build_directory,
-      elements_directory,
+      elements_directory
     }
   ) {
     this.build_directory = path.normalize(options.build_directory);
@@ -28,7 +28,7 @@ export default class Edgy {
     return fs
       .readdirSync(this.elements_directory, {
         encoding: "utf8",
-        withFileTypes: true,
+        withFileTypes: true
       })
       .map((element_file) => {
         if (element_file.isFile()) {
@@ -46,7 +46,7 @@ export default class Edgy {
             file_path,
             parents,
             options: file_json.options,
-            json: file_json,
+            json: file_json
           };
         }
       });
@@ -65,7 +65,7 @@ export default class Edgy {
         const file_path = path.format({
           dir: parents_directory,
           name: parent_block_path,
-          ext: ".json",
+          ext: ".json"
         });
         const { base: file_name, name } = path.parse(file_path);
         const file_json = fs.existsSync(file_path)
@@ -77,7 +77,7 @@ export default class Edgy {
           name,
           file_name,
           file_path,
-          json: file_json,
+          json: file_json
         });
       });
     } catch (error) {
@@ -90,7 +90,7 @@ export default class Edgy {
   buildElement = (element = {}) => {
     const json_options = {
       encoding: "utf8",
-      spaces: 2,
+      spaces: 2
     };
 
     let options_applied = false;
@@ -139,7 +139,7 @@ export default class Edgy {
               ? { ...parent.json.display, ...element.json.display }
               : undefined,
           textures: { ...parent.json.textures, ...element.json.textures },
-          elements: [...parent.json.elements, ...element.json.elements],
+          elements: [...parent.json.elements, ...element.json.elements]
         };
 
         if (parent.json.render_type) {
@@ -205,7 +205,7 @@ export default class Edgy {
                               blockstate.json.variants[variant_key].push({
                                 model: variant.model,
                                 x: degrees_x,
-                                y: degrees_y,
+                                y: degrees_y
                               });
                             }
                           }
@@ -239,7 +239,7 @@ export default class Edgy {
           mod_id: parent.mod_id,
           model: parent.name,
           model_path: parent.file_path,
-          element: element.name,
+          element: element.name
         });
       }
     });
@@ -272,13 +272,16 @@ export default class Edgy {
       LOG.buildCleaned(output_filepath);
 
       // build archive
-      ziplib.archiveFolder(this.build_pack_directory, output_filepath).then(function () {
+      ziplib.archiveFolder(this.build_pack_directory, output_filepath).then(
+        function () {
           if (typeof callback === "function") {
             callback(output_filepath);
           }
-      }, function (err) {
+        },
+        function (err) {
           console.error(err);
-      });
+        }
+      );
     });
   };
 }
@@ -300,7 +303,7 @@ const UTIL = {
     });
 
     return results;
-  },
+  }
 };
 
 // logging
@@ -310,6 +313,11 @@ export const LOG = {
   info: (str) => {
     if (str.length) {
       console.log(`${title}${chalk.bgGray(chalk.black(" INFO "))}`, str);
+    }
+  },
+  error: (str) => {
+    if (str.length) {
+      console.error(`${title}${chalk.bgRed(chalk.black(" ERR# "))}`, str);
     }
   },
   buildCleaned: (clean_path) => {
@@ -328,10 +336,10 @@ export const LOG = {
       console.log(
         title,
         `Built Element ${chalk.yellow(
-          `"${element.name}"`,
+          `"${element.name}"`
         )} using Mod ${chalk.magenta(`"${parent.mod_id}"`)}\n➡️ ${chalk.green(
-          `"${output_filepath}"`,
-        )}`,
+          `"${output_filepath}"`
+        )}`
       );
     } catch (error) {
       throw error;
@@ -352,5 +360,5 @@ export const LOG = {
     } catch (error) {
       throw error;
     }
-  },
+  }
 };
