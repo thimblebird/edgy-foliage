@@ -273,11 +273,11 @@ export default class Edgy {
 
       // build archive
       ziplib.archiveFolder(this.build_pack_directory, output_filepath).then(function () {
-        if (typeof callback === "function") {
-          callback(output_filepath);
-        }
+          if (typeof callback === "function") {
+            callback(output_filepath);
+          }
       }, function (err) {
-        console.error(err);
+          console.error(err);
       });
     });
   };
@@ -328,10 +328,10 @@ export const LOG = {
       console.log(
         title,
         `Built Element ${chalk.yellow(
-          `"${element.name}"`
-        )} using Mod ${chalk.magenta(`"${parent.mod_id}"`)} into ${chalk.green(
-          `"${output_filepath}"`
-        )}`
+          `"${element.name}"`,
+        )} using Mod ${chalk.magenta(`"${parent.mod_id}"`)}\n➡️ ${chalk.green(
+          `"${output_filepath}"`,
+        )}`,
       );
     } catch (error) {
       throw error;
