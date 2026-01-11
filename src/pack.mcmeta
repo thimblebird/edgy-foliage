@@ -1,6 +1,12 @@
 {
   "pack": {
-    "pack_format": 34,
-    "description": "Makes some Minecraft (and mods') foliage all hip & fancy 🔥"
+    "description": "Makes some foliage all hip & fancy 🔥",
+    "pack_format": 75,
+    "min_format": 34,
+    "max_format": 256,
+    "supported_formats": {
+      "min_inclusive": 34,
+      "max_inclusive": 256
+    }
   }
 }
