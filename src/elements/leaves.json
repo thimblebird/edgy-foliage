@@ -67,6 +67,19 @@
       }
     },
     {
+      "name": "mangrove_leaves",
+      "options": {
+        "variants": {
+          "rotate": true
+        }
+      },
+      "json": {
+        "variants": {
+          "": { "model": "minecraft:block/mangrove_leaves" }
+        }
+      }
+    },
+    {
       "name": "oak_leaves",
       "options": {
         "variants": {
